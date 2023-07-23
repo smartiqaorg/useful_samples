@@ -23,5 +23,3 @@ dict_loaded_from_str = json.loads(my_str)
 
 with open('my_json_dump.json', 'r') as f:
     dict_loaded_from_file = json.load(f)
-
-a = 0

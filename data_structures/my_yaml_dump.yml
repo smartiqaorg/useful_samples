@@ -1,0 +1,10 @@
+bool_items:
+  false_item: false
+  true_item: true
+int_items:
+- 1
+- 2
+- 3
+- 4
+- 5
+str_item: Im a string
