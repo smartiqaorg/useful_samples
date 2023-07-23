@@ -147,10 +147,10 @@ class Worker:
             print('No such pizza type!')
 
         self.order = pizza
-        print(f'Your order is accepted')
+        print('Your order is accepted')
 
     def get_money(self, money):
-        self.__cash =+ money
+        self.__cash += money
         print(f'Got {money}$')
 
     def process_order(self):

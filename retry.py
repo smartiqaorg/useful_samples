@@ -4,6 +4,7 @@ RETRIES = 3
 TIMEOUT = 60
 PERIOD = 5
 
+
 def retry(max_retries, timeout, period):
     def outer(func):
         def inner(*args, **kwargs):
@@ -21,7 +22,7 @@ def retry(max_retries, timeout, period):
                     else:
                         retries -= 1
                         print(f"Attempts left: {retries}")
-                        print(f"Sleeping {period} seconds ..." )
+                        print(f"Sleeping {period} seconds ...")
                         time.sleep(period)
         return inner
     return outer
@@ -34,10 +35,3 @@ def send_request():
 
 # Tests
 send_request()
-
-
-
-
-
-
-
