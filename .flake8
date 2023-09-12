@@ -1,6 +1,7 @@
 [flake8]
 ignore=
-    # line too long
+    # Line too long
     E501,
-    #line break after binary operator
+    #Line break after binary operator
     W504
+exclude = ./venv
